@@ -7,8 +7,8 @@
   },
   "configurePresets": [
     {
-      "name": "linux-debug",
-      "displayName": "Linux Debug",
+      "name": "wsl-debug",
+      "displayName": "WSL Debug",
       "description": "Target the Windows Subsystem for Linux (WSL) or a remote system.",
       "generator": "Ninja",
       "binaryDir": "${sourceDir}/out/build/${presetName}",
