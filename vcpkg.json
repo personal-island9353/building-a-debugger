@@ -2,6 +2,7 @@
   "name": "building-a-debugger",
   "version": "0.1",
   "dependencies": [
-    "libedit"
+    "libedit",
+    "catch2"
   ]
 }
