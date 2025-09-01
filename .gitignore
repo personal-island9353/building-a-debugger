@@ -43,6 +43,3 @@
 # CMake
 out/
 CMakeUserPresets.json
-
-# Visual Studio
-.vs/

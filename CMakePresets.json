@@ -7,25 +7,15 @@
   },
   "configurePresets": [
     {
-      "name": "wsl-debug",
-      "displayName": "WSL Debug",
-      "description": "Target the Windows Subsystem for Linux (WSL) or a remote system.",
+      "name": "debug",
+      "displayName": "Debug",
+      "description": "Debug build with Ninja",
       "generator": "Ninja",
       "binaryDir": "${sourceDir}/out/build/${presetName}",
       "installDir": "${sourceDir}/out/install/${presetName}",
       "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug"
-      },
-      "condition": {
-        "type": "equals",
-        "lhs": "${hostSystemName}",
-        "rhs": "Linux"
-      },
-      "vendor": {
-        "microsoft.com/VisualStudioRemoteSettings/CMake/2.0": {
-          "remoteSourceRootDir": "$env{HOME}/.vs/$ms{projectDirName}"
-        }
       }
     }
   ]
