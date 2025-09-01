@@ -9,5 +9,7 @@ add_subdirectory("src")
 add_subdirectory("tools")
 
 if(BUILD_TESTING)
+	enable_testing()
+	include(CTest)
 	add_subdirectory("test")
 endif()
