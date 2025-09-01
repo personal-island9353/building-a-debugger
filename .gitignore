@@ -43,3 +43,6 @@
 # CMake
 out/
 CMakeUserPresets.json
+
+# VS Code
+.vscode/
