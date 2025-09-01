@@ -7,4 +7,4 @@ target_link_libraries(tests PRIVATE sdb::libsdb Catch2::Catch2WithMain)
 
 include(CTest)
 
-add_test(NAME tests COMMAND tests)
+catch_discover_tests(tests)
