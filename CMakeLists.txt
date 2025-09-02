@@ -8,8 +8,8 @@ pkg_check_modules(libedit REQUIRED IMPORTED_TARGET libedit)
 add_subdirectory("src")
 add_subdirectory("tools")
 
+include(CTest)
+
 if(BUILD_TESTING)
-	enable_testing()
-	include(CTest)
-	add_subdirectory("test")
+    add_subdirectory("test")
 endif()
